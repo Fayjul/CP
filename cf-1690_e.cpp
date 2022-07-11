@@ -10,7 +10,7 @@ int main()
     cin >> t;
     while(t--)
     {
-        long int n, k, ans=0, a,b,c;
+        long long int n, k, ans=0, a,b,c;
 
         cin >> n >> k;
         vector<int> mod;
