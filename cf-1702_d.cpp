@@ -6,7 +6,21 @@ Need to check this test case
 codeforces
 1
 
-verdict: don't submitted
+5
+abca
+2
+abca
+6
+codeforces
+1
+codeforces
+10
+codeforces
+100
+
+
+
+verdict: Accepted
 
 */
 
@@ -20,6 +34,7 @@ int main()
     cin >> t;
     while(t--)
     {
+        //cout << ceil(5/3) << endl;
         string w;
         int numberOfChrecter[30];
         for(int i = 0; i<30; i++)
@@ -33,25 +48,29 @@ int main()
             numberOfChrecter[w[i] - 'a' +1 ] ++;
             total += (w[i] - 'a' +1);
         }
-        cout << p << " p -> total" << total << endl;
+     //   cout << p << " p -> total" << total << endl;
         if(p >= total)
         {
-            cout << " I am here" << endl;
+          //  cout << " I am here" << endl;
             cout << w << endl;
             continue;
         }
-        needToDecress = p-total;
+        needToDecress = total-p;
+        //cout << needToDecress << endl;
 
 
-        for(int i =26; i<=1; i--)
+        for(int i =26; i>=1; i--)
         {
+           // cout << i << " " << needToDecress << " " << numberOfChrecter[i] << endl;
             if(numberOfChrecter[i] == 0)
                 continue;
-            a = needToDecress/i;
+            double x = needToDecress,y = i;
+            a = ceil( x/ y);
+            //cout << i << " " << a << endl;
             if(numberOfChrecter[i]<a)
             {
-                b = a- numberOfChrecter[i];
-                needToDecress -= (numberOfChrecter[i]*b);
+                //b = a- numberOfChrecter[i];
+                needToDecress -= (i*numberOfChrecter[i]);
                 numberOfChrecter[i] = 0;
             }
             else{
@@ -60,6 +79,10 @@ int main()
                 break;
             }
         }
+//        for(int i = 1; i<= 26; i++)
+//        {
+//            cout << i << " " << numberOfChrecter[i] << endl;
+//        }
         for(int i =0 ; i < w.length(); i++)
         {
             if(numberOfChrecter[w[i] - 'a' +1] > 0)
