@@ -1,9 +1,10 @@
 /*
-verdict:
-date_start:
-time:
-accepted_time:
-Massege:
+verdict:Accepted
+date_start:28-7-22
+time:10:00 am
+accepted_time:29-7-22
+time: 6:15am
+Massege: Try to think simple
 
 */
 

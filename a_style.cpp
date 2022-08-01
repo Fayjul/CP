@@ -13,6 +13,7 @@ using namespace std;
 
 void solve()
 {
+    cout << "Bismillah Hir-Rahmanir Rahim" << endl;
 
 }
 
