@@ -1,9 +1,9 @@
 /*
-verdict: Wrong answer on test 2
+verdict: Accepted
 109th test case.May be little change need;
 date_start:2022-08-01 18:24:27
 
-accepted_time:
+accepted_time:Aug/02/2022 07:03
 massege: need to try again
 
 */
@@ -15,54 +15,43 @@ using namespace std;
 void solve()
 {
     //cout << "Bismillah Hir-Rahmanir Rahim" << endl;
-    long long int n,m,k, even_row = 0, even_col = 0, odd_row=0,odd_col = 0,a,b,c,flag_row= 0, flag_col=0;
+    long long int n,m,k,a,b,c,total = 0, flag=0;
+    vector<long long int> v;
 
     cin >> n >> m >> k;
-    for(int i = 0; i<k ; i++)
+    for(int i = 0; i<k; i++)
     {
         cin >> a;
+        v.push_back(a);
         b = a/n;
+        if(b>1)
+            total += b;
+        if(b>2)
+            flag=1;
+    }
+    if(total >= m && (m%2 == 0 || flag==1))
+    {
+        cout << "YES" << endl;
+        return;
+    }
+    total = 0;
+    flag = 0;
+    for(int i = 0; i<k; i++)
+    {
+        a = v[i];
         c = a/m;
-
-        if(b > 1)
-        {
-            odd_row+= b;
-            if(b > 2)
-                flag_row = 1;
-        }
         if(c > 1)
-        {
-            odd_col+=c;
-            if(c > 2)
-                flag_col=1;
-        }
-
+            total+= c;
+        if(c > 2)
+            flag = 1;
     }
-    if(even_col+odd_col >= n)
+    if(total >= n && ( n % 2 == 0 || flag == 1) )
     {
-        if(n% 2 == 0 || flag_col == 1)
-            cout << "YES" << endl;
-        else
-            cout << "NO" << endl;
-
-
+        cout << "YES" << endl;
+        return;
     }
-    else if(even_row+odd_row >= m)
-    {
-        if(m % 2 == 0 || flag_row == 1)
-            cout << "YES" << endl;
-        else
-        {
-
-            cout << "NO" << endl;
-        }
-    }
-    else
-    {
-        cout << "NO" << endl;
-    }
-
-
+    cout << "NO" << endl;
+    return ;
 }
 
 int main()
