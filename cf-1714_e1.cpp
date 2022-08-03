@@ -57,7 +57,7 @@ void solve()
         it++;
         c = *it;
         flag = c-b;
-        if(flag == 5 && flag_other == 0)
+        if(flag == 5 && flag_other == 0 && c%10 == 0)
         {
             cout << "YES" << endl;
             return ;
@@ -123,4 +123,6 @@ int main()
 10 10
 2
 10 5
+2
+10 15
 */
