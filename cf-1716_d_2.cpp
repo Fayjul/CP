@@ -14,26 +14,15 @@ using namespace std;
 
 void solve()
 {
-    long long int n,k,a;
+    long long int n,k,a, position;
     //cout << "Bismillah Hir-Rahmanir Rahim" << endl;
     cin >> n >> k;
-    long long int dp[n+10][n+10]= {0}, ans[n+10]= {0};
-
-    for(int i = 1; i <= n; i++)
+    long long int dp[n+10][k+10] = {0}, ans[n+10] = {0};
+    for(int i = k; i<= n; i++)
     {
-        if(i%k == 0)
-        {
-            dp[i]++;
-            for(int j = i+k+1; j <= n; j+= (k+1))
-                dp[j]++;
-        }
+        position = i;
+        if(position%)
     }
-    for(int i = 1; i<= n; i++)
-    {
-        cout << dp[i] << " ";
-    }
-    cout << endl;
-
 
 }
 
