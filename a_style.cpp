@@ -13,14 +13,14 @@ using namespace std;
 
 void solve()
 {
-    cout << "Bismillah Hir-Rahmanir Rahim" << endl;
+   cout << "Allahu Akbar" << endl;
 
 }
 
 int main()
 {
-    int t;
-    cin >> t;
+    int t=1;
+    //cin >> t;
     while(t--)
     {
         solve();
