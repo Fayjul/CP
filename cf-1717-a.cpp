@@ -13,7 +13,10 @@ using namespace std;
 
 void solve()
 {
-   cout << "Allahu Akbar" << endl;
+   int n;
+
+   cin >> n;
+   cout << n+2*(n/2)+2*(n/3) << endl;
 
 }
 
@@ -26,3 +29,4 @@ int main()
         solve();
     }
 }
+

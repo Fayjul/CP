@@ -1,3 +1,4 @@
+
 /*
 verdict:
 date_start:
@@ -13,7 +14,20 @@ using namespace std;
 
 void solve()
 {
-   cout << "Allahu Akbar" << endl;
+    //cout << "Allahu Akbar" << endl;
+    long long int x,y, n=1;
+
+    cin >> x >> y;
+
+    if(x <= y)
+    {
+        cout << y-(y%x)/2 << endl;
+
+    }
+    else
+    {
+        cout << x+y << endl;
+    }
 
 }
 
