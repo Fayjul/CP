@@ -31,7 +31,7 @@ void solve()
 
 
     cin >> n >> k;
-    if((k < n) && (n%2 == 0 && k%2 == 1))
+    if((k < n) || (n%2 == 0 && k%2 == 1))
     {
         cout << "NO" << endl;
         return;
