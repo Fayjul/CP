@@ -1,14 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-#define ll long long int
-
-
 void solve()
 {
-    //cout << "Allahu Akbar" << endl
-
-
+    int n
 }
 
 int main()
@@ -22,6 +17,4 @@ int main()
         solve();
     }
 }
-/*
 
-*/

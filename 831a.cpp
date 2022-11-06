@@ -7,6 +7,13 @@ using namespace std;
 void solve()
 {
     //cout << "Allahu Akbar" << endl
+    ll n;
+
+    cin >> n;
+    if(n == 2)
+        cout << n << endl;
+    else
+        cout << "3" << endl;
 
 
 }

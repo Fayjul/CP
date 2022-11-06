@@ -7,6 +7,10 @@ using namespace std;
 void solve()
 {
     //cout << "Allahu Akbar" << endl
+    ll n, a=4, b=9,c=3;
+
+    cin >> n;
+    cout << ((n == 1)? 3 : (a*n+b)/c) << endl;
 
 
 }
@@ -16,7 +20,7 @@ int main()
     int t=1;
 
 
-    cin >> t;
+    //cin >> t;
     while(t--)
     {
         solve();
@@ -25,3 +29,4 @@ int main()
 /*
 
 */
+

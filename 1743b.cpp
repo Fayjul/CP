@@ -1,12 +1,16 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-#define ll long long int
-
-
 void solve()
 {
     //cout << "Allahu Akbar" << endl
+    int n;
+    cin >> n;
+    cout <<"1 " << n << " ";
+    for(int i = 2;i<n;i++)
+        cout << i << " ";
+    cout << endl;
+
 
 
 }
@@ -22,6 +26,4 @@ int main()
         solve();
     }
 }
-/*
 
-*/

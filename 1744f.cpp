@@ -9,12 +9,16 @@ void solve()
     //cout << "Allahu Akbar" << endl
 
 
+
 }
 
 int main()
 {
-    int t=1;
-
+    int t=2;
+    t = t>>1;
+    cout << t << endl;
+    t = t<<5 ;
+    cout << t << endl;
 
     cin >> t;
     while(t--)
@@ -22,6 +26,4 @@ int main()
         solve();
     }
 }
-/*
 
-*/
